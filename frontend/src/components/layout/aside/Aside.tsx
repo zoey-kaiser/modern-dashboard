@@ -7,7 +7,7 @@ import AsideDropdown from './AsideDropdown';
 
 const Aside = () => {
     return (
-        <aside className="border-r-2 border-zinc-800 bg-dashboard-background-light w-80">
+        <aside className="border-r-2 border-zinc-800 bg-dashboard-background-light w-96">
             <div className="mx-3 mt-10 overflow-y-auto max-h-[95vh]">
                 <ul className="flex flex-col gap-1.5">
                     <AsideDivider title="General" />
@@ -18,10 +18,10 @@ const Aside = () => {
                     </AsideItem>
                     <AsideItem title="Customers" icon={<FiUsers />} link="/customers" />
                     <AsideDropdown title="Products" icon={<FiArchive />}>
-                        <>
+                        <ul>
                             <AsideItem title="All" link="/customers" />
                             <AsideItem title="List" link="/customers" />
-                        </>
+                        </ul>
                     </AsideDropdown>
                 </ul>
                 <ul className="flex flex-col mt-10 gap-1.5">
