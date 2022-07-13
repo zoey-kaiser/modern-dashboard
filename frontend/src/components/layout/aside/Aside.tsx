@@ -13,7 +13,7 @@ const Aside = () => {
                     <AsideDivider title="General" />
                     <AsideItem title="Home" icon={<FiHome />} link="/">
                         <Badge variant="gradient" size="md" gradient={{ from: 'teal', to: 'lime', deg: 105 }}>
-                            NEW
+                            NEW!
                         </Badge>
                     </AsideItem>
                     <AsideItem title="Customers" icon={<FiUsers />} link="/customers" />
